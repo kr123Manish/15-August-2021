@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>H-I-D</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="index.js"></script>
+	s<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body id="s">
+	<canvas height='1' id='confetti' width='1'></canvas>
+	<div class="section">
+		<div class="container ">
+			<div class="orange "></div>
+			<div class="mid">
+				<div class="circle">
+						<span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+			            <span class="line"></span>
+		         </div>
+			</div>
+			<div class="green"></div>
+		</div>
+		<div class="wish animate__animated animate__zoomInDown">
+			<span id="h">Happy<br></span><span id="i">Independence<br></span>  <span id="d">Day</span>
+		</div>
+		
+	</div>
+	<div class="message animate__animated animate__backInRight">
+		<p><span class="po"><strong>All I desire for my country is happiness. </strong>Let me be the first person to wish you a special Happy 75<sup>th</sup> Independence Day!</span><br> Let's salute our great nation on its Independence Day! <br>
+		<span class="pg">I hope you all feel grateful for the freedom you have and are proud of the nation you were born to.</span></p>
+		
+	</div>
+	<div class="btn animate__animated animate__backInLeft">
+			<button id="s2">Play</button>
+			<p class="small">click on play button for more nostalgia. </p>
+	</div>
+	<script type="text/javascript">
+		const audio2=new Audio();
+		audio2.src="flag.mp3";
+		document.getElementById('s').onmouseover=function() {
+			audio2.play();
+		}
+		
+		const audio=new Audio();
+		audio.src="a.mp3";
+			document.getElementById('s2').onclick=function() {
+			audio.play();
+		}
+
+	</script>
+</body>
+</html>

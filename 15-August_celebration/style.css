@@ -1,0 +1,312 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+    background:radial-gradient(ellipse at center);
+  
+}
+#confetti{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* code for flag */
+.section{
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.container{
+  width:530px;
+  height:300px;
+ 
+  transform: rotate(-1deg);
+  animation: beat .2s infinite alternate;
+}
+
+.orange{
+  width: 100%;
+  height:100px;
+  background: #FF9933;
+  border-radius: 60px 60px 0 0;
+}
+.mid{
+  width: 100%;
+  background: #fff;
+  
+}
+.circle{
+  width:100px;
+  height:100px;
+  margin: auto;
+  border-radius:50%;
+  border: 4px #000080 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: rotation 1s linear infinite;
+}
+
+.line {
+    
+    height:102px;
+    width:3px;
+    background: #000080;
+    position:absolute;
+    
+    
+}
+.green{
+  width: 100%;
+  height: 100px;
+  background: #138808;
+  border-radius: 0 0 60px 60px;
+}
+
+/* for spokes */
+.line:nth-child(1) {
+    transform: rotate(15deg)
+}
+  
+.line:nth-child(2) {
+    transform: rotate(30deg)
+}
+  
+.line:nth-child(3) {
+    transform: rotate(45deg)
+}
+  
+.line:nth-child(4) {
+    transform: rotate(60deg)
+}
+  
+.line:nth-child(5) {
+    transform: rotate(75deg)
+}
+  
+.line:nth-child(6) {
+    transform: rotate(90deg)
+}
+  
+.line:nth-child(7) {
+    transform: rotate(105deg)
+}
+  
+.line:nth-child(8) {
+    transform: rotate(120deg)
+}
+  
+.line:nth-child(9) {
+    transform: rotate(135deg)
+}
+  
+.line:nth-child(10) {
+    transform: rotate(150deg)
+}
+  
+.line:nth-child(11) {
+    transform: rotate(165deg)
+}
+  
+.line:nth-child(12) {
+    transform: rotate(180deg)
+}
+ 
+/*For rotation the circle continusly*/
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*for wish*/
+.wish{
+  width:350px;
+ 
+  
+  /*transform: rotate(-20deg);*/
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  
+  display: inline;
+  transform-origin: center;
+  animation:.25s infinite alternate;*/
+
+}
+
+.wish span{
+  
+  font-size:60px;
+  font-family:cursive;
+  font-weight: bold;
+  display: inline;
+  
+
+}
+#h{
+  color: orange;
+}
+
+#i{
+  color: white;
+}
+
+#d{
+  color: green;
+}
+@keyframes beat{
+  to { transform: scale(1.2); }
+}
+
+/* paragraph */
+.message{
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+p{
+  font-family: sans-serif;
+  color: white;
+  font-size: 22px;
+}
+
+p strong{
+  font-size: 24px;
+  display: inline;
+}
+.po{
+  color: #FF9933;
+}
+.pg{
+  color: #138808;
+}
+
+.btn{
+  width: 100%;
+  text-align:center;
+  transition: 0.5s;
+  /*margin-bottom:20px;*/
+}
+
+.btn button{
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(to right, #4c9f44, #729419, #928600, #af7300, #c95a00, #c85700, #c65400, #c55100, #a86600, #857600, #5b8100, #138808);
+  
+}
+
+.btn button:hover {
+  background: radial-gradient(circle, #4c9f44, #6a871c, #7a6d00, #805300, #7e390f, #7d360b, #7b3407, #7a3103, #784800, #6b5e00, #527400, #138808);
+  cursor: pointer;
+
+}
+.small{
+  font-size: 16px;
+  margin: 4px;
+}
+
+/* media querry */
+@media only screen and (max-width: 770px){
+  
+  body{
+    overflow:auto;
+  }
+  .section{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container{
+    width:100%;
+    height:180px;
+  }
+
+  .orange{
+    height:60px;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .circle{
+    width:60px;
+    height:60px;
+    border: 2px #000080 solid;
+  }
+
+  .line {
+    height:58px;
+    width:1px;
+  }
+
+  .green{
+    height: 60px;
+    background: #138808;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .wish{
+    width: 100%;
+    margin-top:30px;
+
+  }
+
+  .wish span{
+    font-size:30px ;
+  }
+  .message{
+    width: 300px;
+    margin-top:-20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+  p strong{
+    font-size: 1rem;
+  }
+.btn button{
+  padding: 3px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(to right, #4c9f44, #729419, #928600, #af7300, #c95a00, #c85700, #c65400, #c55100, #a86600, #857600, #5b8100, #138808);
+  
+}
+
+.btn button:hover {
+  background: radial-gradient(circle, #4c9f44, #6a871c, #7a6d00, #805300, #7e390f, #7d360b, #7b3407, #7a3103, #784800, #6b5e00, #527400, #138808);
+  cursor: pointer;
+
+}
+  
+}
